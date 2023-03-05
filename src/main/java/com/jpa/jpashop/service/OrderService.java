@@ -48,5 +48,11 @@ public class OrderService {
         return orderRepository.findAllByString(orderSearch);
     }
 
+    public List<Order> findByOrderWithMemberDelivery() {
+        return orderRepository.findByOrderWithMemberDelivery();
+    }
 
+    public List<Order> findByOrderWithItem() {
+        return orderRepository.findByOrderWithItem();
+    }
 }
